@@ -1,0 +1,11 @@
+export const BG     = '#050508'
+export const CARD   = 'rgba(255,255,255,0.025)'
+export const BORDER = 'rgba(255,255,255,0.07)'
+export const TEXT   = '#ffffff'
+export const MUTED  = 'rgba(255,255,255,0.55)'
+export const DIMMED = 'rgba(255,255,255,0.35)'
+export const PURPLE = '#8b5cf6'
+export const PINK   = '#ec4899'
+export const GREEN  = '#22c55e'
+export const GOLD   = '#c9a227'
+export const FONT   = "'Google Sans', system-ui, sans-serif"
