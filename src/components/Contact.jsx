@@ -5,7 +5,7 @@ import { BORDER, TEXT, MUTED, DIMMED, PURPLE, FONT } from '../theme'
 const LABEL    = "LET'S WORK TOGETHER"
 const HEADLINE = ['Ready for a website that', 'actually grows your business?']
 const SUBTITLE = 'Drop us a message — we respond fast and give you a free quote.'
-const EMAIL    = 'hello@avamax.studio'
+const EMAIL    = 'contact@avamax.studio'
 const WA_LINK  = 'https://wa.me/2348135876463'
 
 // ── Edit social links here ──
