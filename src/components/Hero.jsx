@@ -3,7 +3,7 @@ import { PURPLE, MUTED, DIMMED, BORDER, TEXT, FONT } from '../theme'
 
 // ── Edit hero text here ──
 const BADGE    = 'MODERN DIGITAL AGENCY · NIGERIA'
-const HEADLINE = ['Turning Ideas Into', 'Digital Reality.']
+const HEADLINE = ['Turning Ideas Into.', '> Functional Reality.']
 const SUBTITLE = 'AvaMax builds fast, responsive, and professional websites that help businesses grow online — delivered in weeks, not months.'
 const CTA_PRIMARY   = 'Start Your Project →'
 const CTA_SECONDARY = 'See Our Services'
