@@ -2,7 +2,7 @@ import { BORDER, TEXT, MUTED, DIMMED, PURPLE, FONT } from '../theme'
 
 // ── Edit footer text here ──
 const LOCATION  = 'Nigeria'
-const COPYRIGHT = `© ${new Date().getFullYear()} AvaMax. All rights reserved.`
+const COPYRIGHT = `© ${new Date().getFullYear()} AvaMax Studio. All rights reserved.`
 
 export default function Footer() {
   return (
