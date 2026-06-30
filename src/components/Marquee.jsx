@@ -4,7 +4,7 @@ import { BORDER, MUTED, FONT } from '../theme'
 const TAGS = [
   'Website Design', 'Web Development', 'UI/UX Design', 'E-commerce',
   'Landing Pages', 'SEO Optimization', 'Branding & Graphics', 'PWA Apps',
-  'Paystack Integration', 'Website Maintenance', 'Nigeria Digital',
+  'Paystack Integration', 'Website Maintenance', 'Avamax Studio Nigeria',
 ]
 
 export default function Marquee() {
