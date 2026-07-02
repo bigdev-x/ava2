@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Anatolithic';
+  src: url('/fonts/Anatolithic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
@@ -5,7 +13,7 @@ html { scroll-behavior: smooth; }
 body {
   background: #050508;
   color: #fff;
-  font-family: 'Google Sans', system-ui, sans-serif;
+  font-family: 'Anatolithic', 'Google Sans', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }

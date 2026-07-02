@@ -8,4 +8,4 @@ export const PURPLE = '#8b5cf6'
 export const PINK   = '#ec4899'
 export const GREEN  = '#22c55e'
 export const GOLD   = '#c9a227'
-export const FONT   = "'Google Sans', system-ui, sans-serif"
+export const FONT   = "'Anatolithic', 'Google Sans', system-ui, sans-serif"
