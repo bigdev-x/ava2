@@ -116,6 +116,11 @@ body {
 }
 .mobile-menu.open { display: flex; }
 
+@media (max-width: 768px) {
+  .bento-grid { grid-template-columns: 1fr !important; }
+  .bento-grid > div[style*="span 2"] { grid-column: span 1 !important; }
+}
+
 @media (max-width: 640px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
