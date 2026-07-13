@@ -1,25 +1,21 @@
-import Nav from './components/Nav'
-import Hero from './components/Hero'
-import Marquee from './components/Marquee'
-import Why from './components/Why'
-import Services from './components/Services'
-import Work from './components/Work'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import WhatsApp from './components/WhatsApp'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import ServicesPage from './pages/ServicesPage'
+import WorkPage from './pages/WorkPage'
+import ContactPage from './pages/ContactPage'
 
 export default function App() {
   return (
-    <>
-      <Nav />
-      <Hero />
-      <Marquee />
-      <Why />
-      <Services />
-      <Work />
-      <Contact />
-      <Footer />
-      <WhatsApp />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/work" element={<WorkPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }

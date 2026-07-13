@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import GradientText from './GradientText'
 import { BORDER, TEXT, MUTED, DIMMED, PURPLE, FONT } from '../theme'
 
@@ -186,6 +187,7 @@ export default function Work() {
   const [paused, setPaused] = useState(false)
   const timerRef = useRef(null)
   const total = PROJECTS.length
+  const navigate = useNavigate()
 
   const go = (idx) => setCurrent((idx + total) % total)
 
@@ -267,7 +269,7 @@ export default function Work() {
             <p style={{ margin: 0, fontSize: 13, color: MUTED }}>Tell us what you want to build — we'll make it happen.</p>
           </div>
           <button
-            onClick={() => scrollTo('contact')}
+            onClick={() => { navigate('/contact'); window.scrollTo({ top: 0 }) }}
             style={{ flexShrink: 0, padding: '12px 26px', borderRadius: 12, border: 'none', background: `linear-gradient(135deg, ${PURPLE}, #a855f7)`, color: '#fff', fontFamily: FONT, fontWeight: 700, fontSize: 14, cursor: 'pointer', boxShadow: '0 6px 24px rgba(139,92,246,0.4)', transition: 'all 0.2s' }}
             onMouseEnter={e => { e.currentTarget.style.opacity = '0.88'; e.currentTarget.style.transform = 'translateY(-2px)' }}
             onMouseLeave={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.transform = 'translateY(0)' }}
