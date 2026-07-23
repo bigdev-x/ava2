@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom'
 import GradientText from './GradientText'
 import { PURPLE, MUTED, DIMMED, BORDER, TEXT, FONT } from '../theme'
 
@@ -16,9 +15,10 @@ const STATS = [
   { v: '₦10M+', l: 'client revenue' },
 ]
 
+const scrollTo = (id) =>
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+
 export default function Hero() {
-  const navigate = useNavigate()
-  const go = (path) => { navigate(path); window.scrollTo({ top: 0 }) }
   return (
     <section style={{ position: 'relative', overflow: 'hidden', padding: '110px 24px 100px', textAlign: 'center', fontFamily: FONT }}>
 
@@ -49,7 +49,7 @@ export default function Hero() {
         {/* CTAs */}
         <div className="cta-row" style={{ justifyContent: 'center', marginBottom: 52 }}>
           <button
-            onClick={() => go('/contact')}
+            onClick={() => scrollTo('contact')}
             style={{ padding: '16px 34px', borderRadius: 12, border: 'none', background: `linear-gradient(135deg, ${PURPLE}, #a855f7)`, color: '#fff', fontFamily: FONT, fontWeight: 700, fontSize: 15, cursor: 'pointer', boxShadow: '0 8px 32px rgba(139,92,246,0.5)', transition: 'all 0.2s', whiteSpace: 'nowrap' }}
             onMouseEnter={e => { e.currentTarget.style.opacity = '0.88'; e.currentTarget.style.transform = 'translateY(-2px)' }}
             onMouseLeave={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.transform = 'translateY(0)' }}
@@ -57,7 +57,7 @@ export default function Hero() {
             {CTA_PRIMARY}
           </button>
           <button
-            onClick={() => go('/services')}
+            onClick={() => scrollTo('services')}
             style={{ padding: '16px 34px', borderRadius: 12, background: 'rgba(255,255,255,0.03)', border: `1px solid ${BORDER}`, color: TEXT, fontFamily: FONT, fontWeight: 600, fontSize: 15, cursor: 'pointer', transition: 'all 0.2s', whiteSpace: 'nowrap' }}
             onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(139,92,246,0.5)'; e.currentTarget.style.background = 'rgba(139,92,246,0.07)' }}
             onMouseLeave={e => { e.currentTarget.style.borderColor = BORDER; e.currentTarget.style.background = 'rgba(255,255,255,0.03)' }}
